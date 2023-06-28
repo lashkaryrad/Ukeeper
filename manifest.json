@@ -4,8 +4,12 @@
   "description": "The Clean URL keeper For General Usage.",
   "manifest_version": 3,
   "author": "Ahmadreza LashkaryRad",
+  "background": {},
+  "permissions": [
+    "tabs"
+  ],
   "action":{
-      "default_popup": "src/index.html",
+      "default_popup": "index.html",
       "default_title": "Ukeeper"
   }
 }
