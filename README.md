@@ -4,8 +4,10 @@ an Extension for keep you're URLs, 'URL Keeper'
 ## TODOs
 
 - [x] FIX Width and higth
-- [ ] Continue the project with Tailwind and flowbite
+- [x] Continue the project with Tailwind and flowbite
 - [ ] View the URL in a <B>Disabled input</B>
+- [ ] Adding Icons
+- [ ] Toggle Dark Mode
 - [ ] Saving URLS (Temporarly)
 - [ ] Add Title for Each URL
 - [ ] Add Discription forEach URL
