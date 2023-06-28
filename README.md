@@ -8,6 +8,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 - [ ] View the URL in a <B>Disabled input</B>
 - [ ] Adding Icons
 - [ ] Toggle Dark Mode
+- [ ] Disable the input by defualt and adding edit button 
 - [ ] Saving URLS (Temporarly)
 - [ ] Add Title for Each URL
 - [ ] Add Discription forEach URL
