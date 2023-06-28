@@ -1,7 +1,8 @@
-var site;
+let showCurrentURL = document.getElementById("show-current-url");
+var currentSiteURL;
 
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-  var site = tabs[0].url;
-  document.querySelector('p').innerHTML = site;
+  var currentSiteURL = tabs[0].url;
+  showCurrentURL.value = currentSiteURL;
 });
 
