@@ -3,7 +3,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 
 ## TODOs
 
-- [ ] FIX Width and higth
+- [x] FIX Width and higth
 - [ ] Continue the project with Tailwind and flowbite
 - [ ] View the URL in a <B>Disabled input</B>
 - [ ] Saving URLS (Temporarly)
