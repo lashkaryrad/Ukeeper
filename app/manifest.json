@@ -8,6 +8,9 @@
   "permissions": [
     "tabs"
   ],
+  "icons": {
+    "94": "images/icon94.png"
+  },
   "action":{
       "default_popup": "index.html",
       "default_title": "Ukeeper"
