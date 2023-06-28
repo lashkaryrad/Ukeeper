@@ -1,0 +1,11 @@
+{
+  "name": "UKeeper",
+  "version": "1.0.0",
+  "description": "The Clean URL keeper For General Usage.",
+  "manifest_version": 3,
+  "author": "Ahmadreza LashkaryRad",
+  "action":{
+      "default_popup": "src/index.html",
+      "default_title": "Ukeeper"
+  }
+}
