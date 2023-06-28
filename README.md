@@ -5,9 +5,8 @@ an Extension for keep you're URLs, 'URL Keeper'
 
 - [ ] FIX Width and higth
 - [ ] Continue the project with Tailwind and flowbite
-- [ ] View the URL in a <B>Disabled input<B>
+- [ ] View the URL in a <B>Disabled input</B>
 - [ ] Saving URLS (Temporarly)
 - [ ] Add Title for Each URL
 - [ ] Add Discription forEach URL
-<hr>
 - [ ] Make Folder for Each category
