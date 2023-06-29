@@ -1,6 +1,6 @@
 /*   ----   Core   ----    */
 let actionURL = document.getElementById("action-url"); // Define actionURL input.
-var addButton = document.getElementById('add-url'); //Define Add Buttons
+var addButton = document.getElementById('add-url'); // Define Add Buttons
 var currentSiteURL; // Define current Site's URL.
 
 // Getting current Site's URL from chrome Tabs.
