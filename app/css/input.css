@@ -66,18 +66,17 @@ html {
 
 
 /* Styling for the pop-up */
-    .popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      border: 2px solid #000;
-    }
+#popupContainer {
+  display: none;
+  position: fixed;
+  top: 50%;      left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #000;
+}
 
     /* Styling for the overlay background */
     .overlay {
@@ -147,26 +146,26 @@ html {
       pointer-events: none;
     }
 
-    @keyframes shine {
-      0% {
-        background-position: -200% center;
-      }
-      100% {
-        background-position: 200% center;
-      }
-    }
+@keyframes shine {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
 
-    .shine-form button {
-      display: block;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.shine-form button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    .shine-form button:hover {
-      background-color: #45a049;
-    }
+.shine-form button:hover {
+  background-color: #45a049;
+}

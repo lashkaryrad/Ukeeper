@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   addButton.addEventListener('click', function() {
     // if add button clicks, run 'appendURL' Function.
-    addButton.onclick = appendURL();
+    addButton.onclick = showPopup();
 
     // addIcon animation 
     addIcon.style.display = 'none';
@@ -40,7 +40,7 @@ function showPopup() {
   document.getElementById("overlay").style.display = "block";
 }
 
-function hidePopup() {
+document.getElementById("close-button").onclick = () => {
   document.getElementById("popupContainer").style.display = "none";
   document.getElementById("overlay").style.display = "none";
 }

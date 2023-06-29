@@ -1612,7 +1612,7 @@ html {
 
 /* Styling for the pop-up */
 
-.popup {
+#popupContainer {
   display: none;
   position: fixed;
   top: 50%;
