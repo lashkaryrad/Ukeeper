@@ -1126,10 +1126,6 @@ input:checked + .toggle-bg {
   height: 1.5rem;
 }
 
-.h-\[16px\] {
-  height: 16px;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1144,18 +1140,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-\[16px\] {
-  width: 16px;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .flex-1 {
@@ -1260,17 +1244,6 @@ input:checked + .toggle-bg {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
 }
 
 .overflow-auto {
@@ -1456,11 +1429,6 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .opacity-0 {
   opacity: 0;
 }
@@ -1518,7 +1486,18 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.copy-button {
+/* Styles for #canvas DIV */
+
+#canvas {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* changeing the style of add-url button */
+
+#add-url {
   display: none;
   background-color: transparent;
   border: 1px solid #d1d5da;
@@ -1530,17 +1509,21 @@ input:checked + .toggle-bg {
   border-radius: 6px;
 }
 
-.copy-button:hover {
+/* add-url onhover */
+
+#add-url:hover {
   background-color: #f6f8fa;
   border-color: #c8e1ff;
   border-radius: 6px;
 }
 
-.copy-button:hover .octicon-copy {
+/* add-url onhover fill */
+
+#add-url:hover .octicon-copy {
   fill: #40c463;
 }
 
-.copy-feedback {
+#add-url-feedback {
   display: none;
   position: absolute;
   top: -24px;
@@ -1550,6 +1533,11 @@ input:checked + .toggle-bg {
   color: #333;
   padding: 5px;
   font-size: 12px;
+}
+
+#add-url-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .hover\:border-gray-300:hover {
@@ -1627,11 +1615,6 @@ input:checked + .toggle-bg {
 .focus\:ring-green-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(14 159 110 / var(--tw-ring-opacity));
-}
-
-:is(.dark .dark\:divide-gray-700) > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-divide-opacity));
 }
 
 :is(.dark .dark\:border-blue-500) {
@@ -1745,3 +1728,4 @@ input:checked + .toggle-bg {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(63 131 248 / var(--tw-ring-opacity));
 }
+

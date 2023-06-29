@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-.copy-button {
+/* Styles for #canvas DIV */
+#canvas {
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* changeing the style of add-url button */
+#add-url {
   display: none;
   background-color: transparent;
   border: 1px solid #d1d5da;
@@ -14,17 +23,19 @@
   border-radius: 6px;
 }
 
-.copy-button:hover {
+/* add-url onhover */
+#add-url:hover {
   background-color: #f6f8fa;
   border-color: #c8e1ff;
   border-radius: 6px;
 }
 
-.copy-button:hover .octicon-copy {
+/* add-url onhover fill */
+#add-url:hover .octicon-copy {
   fill: #40c463;
 }
 
-.copy-feedback {
+#add-url-feedback {
   display: none;
   position: absolute;
   top: -24px;
@@ -35,3 +46,9 @@
   padding: 5px;
   font-size: 12px;
 }
+
+#add-url-icon {
+  width: 16px;
+  height: 16px;
+}
+

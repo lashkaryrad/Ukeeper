@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var copyButton = document.querySelector('.copy-button');
+  var copyButton = document.querySelector('#add-url');
   var codeSnippet = document.querySelector('.highlight');
-  var copyIcon = document.querySelector('.octicon-copy');
+  var copyIcon = document.querySelector('.octicon-add');
   var checkIcon = document.querySelector('.octicon-check');
 
   copyButton.addEventListener('click', function() {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Style 
-var copyButton = document.querySelector('.copy-button');
+var copyButton = document.querySelector('#add-url');
 let showURL = document.getElementById('show-current-url');
 
 showURL.addEventListener("mouseover", () => {

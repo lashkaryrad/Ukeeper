@@ -7,14 +7,17 @@
   <title>🗒️ Ukeeper</title>
 </head>
 <body>
-  <div id="canvas" style="width: 400px;margin-top: 10px;margin-left: 10px;margin-right: 10px;">
+
+  <!-- URL acctions -->
+  <div id="canvas">
+    <!-- input for show/add/edit/delete the Current WebSite URL -->
     <input type="text" id="show-current-url" aria-label="disabled input" class="mb-6 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
     <pre class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto">text</pre>
 
-    <div class="copy-button-container">
-      <button type="submit" class="copy-button
-      absolute top-0 right-0 p-2.5 text-sm font-medium rounded-r-lg focus:ring-green-500" data-clipboard-target="#code-snippet" style="
+    <div class="add-url-container">
+      <button type="submit" id="add-url" class="absolute top-0 right-0 p-2.5 text-sm font-medium rounded-r-lg focus:ring-green-500" 
+        style="
         padding-right: 1px;
         padding-left: 1px;
         padding-top: 1px;
@@ -22,15 +25,16 @@
         top: 10px;
         right: 20px;
         margin-top: 3px;">
-        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon m-2" style="display: inline;">
-          <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path>
-          <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+        <!-- add-url-svg -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="add-url-icon" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="octicon octicon-add js-clipboard-copy-icon m-2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25" />
         </svg>
+        <!-- check-svg -->
         <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success m-2 d-none" style="display: none;">
           <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
         </svg>
       </button>
-      <span class="copy-feedback" aria-live="polite"></span>
+      <span class="add-url-feedback" aria-live="polite"></span>
     </div>
   </div>
   
