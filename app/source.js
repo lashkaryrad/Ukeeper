@@ -102,8 +102,8 @@ function appendURL(urlName, /* urlDiscription */) {
   // Create the <img> element with the specified attributes
   const imgElement = document.createElement('img');
   imgElement.classList.add('w-8', 'h-8', 'rounded-full');
-  imgElement.src = '/docs/images/people/profile-picture-1.jpg';
-  imgElement.alt = 'Neil image';
+  imgElement.src = 'images/webIcon.png';
+  imgElement.alt = 'Web Icon';
 
   // Append the <img> element to the first inner <div> element
   innerDivElement1.appendChild(imgElement);
