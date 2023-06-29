@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .copy-button {
-  background-color: #fff;
+  display: none;
+  background-color: transparent;
   border: 1px solid #d1d5da;
   color: #333;
   padding: 5px 10px;
@@ -20,7 +21,7 @@
 }
 
 .copy-button:hover .octicon-copy {
-  fill: #0366d6;
+  fill: #40c463;
 }
 
 .copy-feedback {

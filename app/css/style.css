@@ -1134,10 +1134,6 @@ input:checked + .toggle-bg {
   width: 1rem;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-64 {
   width: 16rem;
 }
@@ -1491,7 +1487,8 @@ input:checked + .toggle-bg {
 }
 
 .copy-button {
-  background-color: #fff;
+  display: none;
+  background-color: transparent;
   border: 1px solid #d1d5da;
   color: #333;
   padding: 5px 10px;
@@ -1508,7 +1505,7 @@ input:checked + .toggle-bg {
 }
 
 .copy-button:hover .octicon-copy {
-  fill: #0366d6;
+  fill: #40c463;
 }
 
 .copy-feedback {
@@ -1593,6 +1590,11 @@ input:checked + .toggle-bg {
 .focus\:ring-gray-200:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-green-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(14 159 110 / var(--tw-ring-opacity));
 }
 
 :is(.dark .dark\:border-blue-500) {
@@ -1705,9 +1707,4 @@ input:checked + .toggle-bg {
 :is(.dark .dark\:focus\:ring-blue-500:focus) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(63 131 248 / var(--tw-ring-opacity));
-}
-
-:is(.dark .dark\:focus\:ring-blue-800:focus) {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(30 66 159 / var(--tw-ring-opacity));
 }

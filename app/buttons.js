@@ -18,6 +18,27 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       copyIcon.style.display = 'inline';
       checkIcon.style.display = 'none';
-    }, 1500);
+    }, 1000);
   });
+});
+
+// Style 
+var copyButton = document.querySelector('.copy-button');
+let showURL = document.getElementById('show-current-url');
+
+showURL.addEventListener("mouseover", () => {
+  copyButton.style.display = 'block';
+});
+
+showURL.addEventListener("mouseout", () => {
+  copyButton.style.display = 'none';
+});
+
+
+copyButton.addEventListener("mouseover", () => {
+  copyButton.style.display = 'block';
+});
+
+copyButton.addEventListener("mouseout", () => {
+  copyButton.style.display = 'none';
 });
