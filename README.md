@@ -7,7 +7,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 - [x] View the URL in a <B>Disabled input</B>
 - [x] FIX Width and higth
 - [x] if input on hover then show the button
-- [ ] show green shadows for onHover for button
+- [x] show green shadows for onHover for button
 - [ ] Saving URLS (Temporarly)
 - [ ] Adding Icons
 - [ ] Toggle Dark Mode
