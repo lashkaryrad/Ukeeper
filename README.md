@@ -5,7 +5,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 
 - [x] Continue the project with Tailwind and flowbite
 - [x] View the URL in a <B>Disabled input</B>
-- [ ] FIX Width and higth
+- [x] FIX Width and higth
 - [ ] Adding Icons
 - [ ] Toggle Dark Mode
 - [ ] Disable the input by defualt and adding edit button 
