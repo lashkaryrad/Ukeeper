@@ -33,6 +33,41 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+/*   ----   POP UP    ----    */
+function showPopup() {
+  document.getElementById("popupContainer").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+
+function hidePopup() {
+  document.getElementById("popupContainer").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
+function validateAndHide() {
+  // Add your form validation logic here
+  var nameInput = document.getElementById("nameInput").value;
+  if (nameInput !== "") {
+    hidePopup();
+  } else {
+    alert("Please enter your name before closing the pop-up.");
+  }
+
+  var firstName = document.getElementById("firstName").value;
+  var lastName = document.getElementById("lastName").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
+  // Example validation: Check if any field is empty
+  if (firstName === "" || lastName === "" || email === "" || password === "") {
+    alert("Please fill out all the fields before closing the pop-up.");
+  } else {
+    hidePopup();
+  }
+}
+
+
 // save URL function
 function saveURL() {
   // Adds a pop Up for URL datails and save that
@@ -41,8 +76,6 @@ function saveURL() {
 
 
 function appendURL() {
-
-
 
   // Create the <li> element
   const liElement = document.createElement('li');
