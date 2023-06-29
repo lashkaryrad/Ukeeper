@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var checkIcon = document.querySelector('.octicon-check');
 
   addButton.addEventListener('click', function() {
+    // if add button clicks, run 'appendURL' Function.
     addButton.onclick = appendURL();
-    
 
     // addIcon animation 
     addIcon.style.display = 'none';
@@ -32,6 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   });
 });
+
+// save URL function
+function saveURL() {
+  // Adds a pop Up for URL datails and save that
+  // Pass
+}
+
 
 function appendURL() {
 
@@ -67,14 +74,14 @@ function appendURL() {
   nameParagraph.classList.add('text-sm', 'font-medium', 'text-gray-900', 'truncate', 'dark:text-white');
   nameParagraph.textContent = 'Neil Sims';
 
-  // Create the <p> element for the email
-  const emailParagraph = document.createElement('p');
-  emailParagraph.classList.add('text-sm', 'text-gray-500', 'truncate', 'dark:text-gray-400');
-  emailParagraph.textContent = 'email@flowbite.com';
+  // Create the <p> element for the WebSite's URL
+  const webSiteURL = document.createElement('p');
+  webSiteURL.classList.add('text-sm', 'text-gray-500', 'truncate', 'dark:text-gray-400');
+  webSiteURL.textContent = actionURL.value;
 
   // Append the name and email paragraphs to the second inner <div> element
   innerDivElement2.appendChild(nameParagraph);
-  innerDivElement2.appendChild(emailParagraph);
+  innerDivElement2.appendChild(webSiteURL);
 
   // Create the third <div> element with the "inline-flex items-center text-base font-semibold text-gray-900 dark:text-white" classes
   const innerDivElement3 = document.createElement('div');
