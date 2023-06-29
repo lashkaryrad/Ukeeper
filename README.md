@@ -6,7 +6,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 - [x] Continue the project with Tailwind and flowbite
 - [x] View the URL in a <B>Disabled input</B>
 - [x] FIX Width and higth
-- [ ] if input on hover then show the button
+- [x] if input on hover then show the button
 - [ ] show green shadows for onHover for button
 - [ ] Saving URLS (Temporarly)
 - [ ] Adding Icons
