@@ -1542,6 +1542,12 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+/* Display Borders */
+
+html {
+  height: 350px;
+}
+
 /* Styles for #canvas DIV */
 
 #canvas {
