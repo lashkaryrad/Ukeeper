@@ -1,6 +1,7 @@
 /*   ----   Core   ----    */
 let actionURL = document.getElementById("action-url"); // Define actionURL input.
-var addButton = document.getElementById('add-url'); // Define Add Buttons
+var addButton = document.getElementById('add-url'); // Define Add Buttons.
+var urlsList = document.getElementById('urls-list'); // Define URLs List.
 var currentSiteURL; // Define current Site's URL.
 
 // Getting current Site's URL from chrome Tabs.
@@ -18,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var checkIcon = document.querySelector('.octicon-check');
 
   addButton.addEventListener('click', function() {
-    // Do adding URL, here...
+    addButton.onclick = appendURL();
+    
 
     // addIcon animation 
     addIcon.style.display = 'none';
@@ -30,6 +32,69 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
   });
 });
+
+function appendURL() {
+
+
+
+  // Create the <li> element
+  const liElement = document.createElement('li');
+  liElement.classList.add('pb-3', 'sm:pb-4');
+
+  // Create the <div> element with the "flex items-center space-x-4" classes
+  const divElement = document.createElement('div');
+  divElement.classList.add('flex', 'items-center', 'space-x-4');
+
+  // Create the first <div> element with the "flex-shrink-0" class
+  const innerDivElement1 = document.createElement('div');
+  innerDivElement1.classList.add('flex-shrink-0');
+
+  // Create the <img> element with the specified attributes
+  const imgElement = document.createElement('img');
+  imgElement.classList.add('w-8', 'h-8', 'rounded-full');
+  imgElement.src = '/docs/images/people/profile-picture-1.jpg';
+  imgElement.alt = 'Neil image';
+
+  // Append the <img> element to the first inner <div> element
+  innerDivElement1.appendChild(imgElement);
+
+  // Create the second <div> element with the "flex-1 min-w-0" class
+  const innerDivElement2 = document.createElement('div');
+  innerDivElement2.classList.add('flex-1', 'min-w-0');
+
+  // Create the <p> element for the name
+  const nameParagraph = document.createElement('p');
+  nameParagraph.classList.add('text-sm', 'font-medium', 'text-gray-900', 'truncate', 'dark:text-white');
+  nameParagraph.textContent = 'Neil Sims';
+
+  // Create the <p> element for the email
+  const emailParagraph = document.createElement('p');
+  emailParagraph.classList.add('text-sm', 'text-gray-500', 'truncate', 'dark:text-gray-400');
+  emailParagraph.textContent = 'email@flowbite.com';
+
+  // Append the name and email paragraphs to the second inner <div> element
+  innerDivElement2.appendChild(nameParagraph);
+  innerDivElement2.appendChild(emailParagraph);
+
+  // Create the third <div> element with the "inline-flex items-center text-base font-semibold text-gray-900 dark:text-white" classes
+  const innerDivElement3 = document.createElement('div');
+  innerDivElement3.classList.add('inline-flex', 'items-center', 'text-base', 'font-semibold', 'text-gray-900', 'dark:text-white');
+  innerDivElement3.textContent = '$320';
+
+  // Append the three inner <div> elements to the outer <div> element
+  divElement.appendChild(innerDivElement1);
+  divElement.appendChild(innerDivElement2);
+  divElement.appendChild(innerDivElement3);
+
+  // Append the <div> element to the <li> element
+  liElement.appendChild(divElement);
+
+  urlsList.appendChild(liElement);
+
+}
+
+
+
 
 /*   ----   Styles for Doing add URL.   ----    */
 actionURL.addEventListener("mouseover", () => {

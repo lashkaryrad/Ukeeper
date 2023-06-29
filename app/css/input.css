@@ -52,3 +52,9 @@
   height: 16px;
 }
 
+/* changeing the style of URLs List Container */
+#urls-list-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
