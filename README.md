@@ -8,6 +8,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 - [x] FIX Width and higth
 - [x] if input on hover then show the button
 - [x] show green shadows for onHover for button
+- [ ] Add Comments & Clean Up
 - [ ] Saving URLS (Temporarly)
 - [ ] add x-mark icon when url input is balnk or exist
 - [ ] make style.fill.red
