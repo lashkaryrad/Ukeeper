@@ -38,9 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
 function showPopup() {
   document.getElementById("popupContainer").style.display = "block";
   document.getElementById("overlay").style.display = "block";
+
+  let frm = document.getElementById("url-info");
+  frm.onsubmit = () => {
+    let nameURL = document.getElementById("nameURL").value;
+    let descURL = document.getElementById("descURL").value;
+
+    appendURL(nameURL);
+    closePopUp();
+  }
+  // return false;
 }
 
-document.getElementById("close-button").onclick = () => {
+function closePopUp() {
   document.getElementById("popupContainer").style.display = "none";
   document.getElementById("overlay").style.display = "none";
 }
@@ -75,7 +85,7 @@ function saveURL() {
 }
 
 
-function appendURL() {
+function appendURL(urlName, /* urlDiscription */) {
 
   // Create the <li> element
   const liElement = document.createElement('li');
@@ -105,7 +115,7 @@ function appendURL() {
   // Create the <p> element for the name
   const nameParagraph = document.createElement('p');
   nameParagraph.classList.add('text-sm', 'font-medium', 'text-gray-900', 'truncate', 'dark:text-white');
-  nameParagraph.textContent = 'Neil Sims';
+  nameParagraph.textContent = urlName;
 
   // Create the <p> element for the WebSite's URL
   const webSiteURL = document.createElement('p');
