@@ -1,44 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var copyButton = document.querySelector('#add-url');
-  var codeSnippet = document.querySelector('.highlight');
-  var copyIcon = document.querySelector('.octicon-add');
+  // Define Variables
+  var addButton = document.getElementById('add-url');
+  var actionURL = document.getElementById('action-url')
+  var addIcon = document.querySelector('.octicon-add');
   var checkIcon = document.querySelector('.octicon-check');
 
-  copyButton.addEventListener('click', function() {
-    var range = document.createRange();
-    range.selectNode(codeSnippet);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
+  addButton.addEventListener('click', function() {
+    // Do adding URL, here...
 
-    copyIcon.style.display = 'none';
+    // addIcon animation 
+    addIcon.style.display = 'none';
     checkIcon.style.display = 'inline';
 
     setTimeout(function() {
-      copyIcon.style.display = 'inline';
+      addIcon.style.display = 'inline';
       checkIcon.style.display = 'none';
     }, 1000);
   });
 });
 
-// Style 
-var copyButton = document.querySelector('#add-url');
-let showURL = document.getElementById('show-current-url');
+/*       Styles for Doing add URL.        */
+var addButton = document.getElementById('add-url');
+let actionURL = document.getElementById('action-url');
 
-showURL.addEventListener("mouseover", () => {
-  copyButton.style.display = 'block';
+actionURL.addEventListener("mouseover", () => {
+  addButton.style.display = 'block';
 });
 
-showURL.addEventListener("mouseout", () => {
-  copyButton.style.display = 'none';
+actionURL.addEventListener("mouseout", () => {
+  addButton.style.display = 'none';
 });
 
 
-copyButton.addEventListener("mouseover", () => {
-  copyButton.style.display = 'block';
+addButton.addEventListener("mouseover", () => {
+  addButton.style.display = 'block';
 });
 
-copyButton.addEventListener("mouseout", () => {
-  copyButton.style.display = 'none';
+addButton.addEventListener("mouseout", () => {
+  addButton.style.display = 'none';
 });

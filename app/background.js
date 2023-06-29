@@ -1,4 +1,4 @@
-let showCurrentURL = document.getElementById("show-current-url");
+let showCurrentURL = document.getElementById("action-url");
 var currentSiteURL;
 
 chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
