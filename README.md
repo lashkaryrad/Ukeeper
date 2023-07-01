@@ -9,7 +9,7 @@ an Extension for keep you're URLs, 'URL Keeper'
 - [x] if input on hover then show the button
 - [x] show green shadows for onHover for button
 - [ ] Add Comments & Clean Up
-- [ ] Saving URLS (Temporarly)
+- [x] Saving URLS (Temporarly)
 - [ ] add x-mark icon when url input is balnk or exist
 - [ ] make style.fill.red
 - [ ] Toggle Dark Mode
